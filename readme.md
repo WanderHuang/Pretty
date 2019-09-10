@@ -39,10 +39,10 @@
    ![image-20190910203508185](./readme.assets/image-20190910203508185.png)
 
 2. 样式奇怪的原始文件
-   ![](./readme.assets/屏幕快照 2019-09-10 下午8.35.38.png)
+   ![](./readme.assets/38.png)
 
 3. 输出文件目录
-   ![](./readme.assets/屏幕快照 2019-09-10 下午8.37.50.png)
+   ![](./readme.assets/50.png)
 
 4. 样式漂亮的输出文件
    ![image-20190910203945684](./readme.assets/image-20190910203945684.png)
