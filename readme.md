@@ -1,33 +1,196 @@
-##### prettier
+##### 📚brief view
+
+写这个项目的初衷，是因为最近接手了一个3w+样式错误(eslint airbnb)的项目，因为之后会花时间去维护这个项目，那如果不解决这些问题，以后岂不是很惨。并且现在也有好几人在维护，也需要统一代码风格。因此，用这个项目装到`devD ependencies`中，然后跑一遍`pretty`，既对代码做了格式化(`.prettierrc`)，也做了代码检测(.eslintrc)，最后还输出了哪些遗留问题(无法被`eslint --fix`解决掉的)，接下来维护起来应该方便很多了吧😊
+
+> 如果您有更好的解决【老旧工程】样式统一、风格一致性问题的方式，希望您告诉我，一起学习学习
+
+##### 🍰prettier
 
 > 快速格式化你的代码， 终结各种写法之争
 
 目前来看，在`react`开发中大多使用prettier默认设置就行了，喜欢js中用单引号的，自行修改singleQuote就行了。
 
-##### eslint
+##### 👿eslint
 
 > 代码检测，让问题代码无处遁形
 
 人工做代码检测是很累的，大部分程式化的工作就交给机器来做就行了。
 
-##### use
+##### 😄use
 * 另起工程来做
   1. `clone`到本地
   2. 把旧工程的`eslint`和`prettier`规则迁移到当前。如旧工程没有的，可以在本目录配置好这两个插件
   3. 执行`node index --help`(可以查看参数)
   4. 执行`node index`使用默认参数运行
 * 安装到`devDependencies`使用命令行
-  1. `npm install @wander/pretty --save-dev`
+  1. `npm install wander-pretty --save-dev`
   2. 在项目根目录
   3. `pretty --help`查看参数
   4. `pretty`使用默认参数执行
 
 
-##### benefit
+##### 🍎benefit
 * 自动给全部`js`应用`.prettier`的样式
 * 输出一个报错的`eslint`文件，供你选择
 
-##### linter-learner
+##### 📃exhibition
+
+1. 原始文件目录
+   ![image-20190910203508185](/Users/huangjunjie27/Desktop/projects/mine/Pretty/readme.assets/image-20190910203508185.png)
+
+2. 样式奇怪的原始文件
+   ![](/Users/huangjunjie27/Desktop/projects/mine/Pretty/readme.assets/屏幕快照 2019-09-10 下午8.35.38.png)
+
+3. 输出文件目录
+   ![](/Users/huangjunjie27/Desktop/projects/mine/Pretty/readme.assets/屏幕快照 2019-09-10 下午8.37.50.png)
+
+4. 样式漂亮的输出文件
+   ![image-20190910203945684](/Users/huangjunjie27/Desktop/projects/mine/Pretty/readme.assets/image-20190910203945684.png)
+
+5. 告诉你哪些eslint没有被解决掉.默认为根目录下的`.pretty.error-eslint.json`
+
+   ```json
+   {
+     "no-undef": [
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/components/TestComponent.js",
+         "column": 45
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/components/TestComponent.js",
+         "column": 31
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/index.js",
+         "column": 45
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/index.js",
+         "column": 31
+       }
+     ],
+     "constructor-super": [
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/components/TestComponent.js",
+         "column": 3
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/index.js",
+         "column": 3
+       }
+     ],
+     "no-empty-function": [
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/components/TestComponent.js",
+         "column": 17
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/index.js",
+         "column": 17
+       }
+     ],
+     "react/sort-comp": [
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/components/TestComponent.js",
+         "column": 3
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/index.js",
+         "column": 3
+       }
+     ],
+     "class-methods-use-this": [
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/components/TestComponent.js",
+         "column": 13
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/components/TestComponent.js",
+         "column": 14
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/index.js",
+         "column": 13
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/index.js",
+         "column": 14
+       }
+     ],
+     "no-unused-vars": [
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/components/TestComponent.js",
+         "column": 14
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/components/TestComponent.js",
+         "column": 15
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/index.js",
+         "column": 14
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/index.js",
+         "column": 15
+       }
+     ],
+     "no-console": [
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/components/TestComponent.js",
+         "column": 19
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/components/TestComponent.js",
+         "column": 20
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/index.js",
+         "column": 19
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/index.js",
+         "column": 20
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/utils/index.js",
+         "column": 3
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/utils/index.js",
+         "column": 19
+       }
+     ],
+     "react/state-in-constructor": [
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/components/TestComponent.js",
+         "column": 3
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/index.js",
+         "column": 3
+       }
+     ],
+     "react/no-unused-state": [
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/components/TestComponent.js",
+         "column": 5
+       },
+       {
+         "filePath": "Desktop/projects/mine/pretty-test/src/index.js",
+         "column": 5
+       }
+     ]
+   }
+   ```
+
+   
+
+   
+
+   
+
+##### 👨‍🎓linter-learner
 学习使用lint
 ```json
 {
