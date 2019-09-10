@@ -14,7 +14,7 @@ commander
 
 commander.parse(process.argv);
 
-sh.cd('..');
+// sh.cd('..');
 
 const {
   eslintrc = defaultConfig.eslintrc,
