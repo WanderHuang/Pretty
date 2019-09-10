@@ -26,7 +26,7 @@ const {
 } = commander;
 
 sh.exec(
-  `node index.js ` + 
+  `node ./node_modules/wander-pretty/index.js ` + 
   `-l ${eslintrc} ` +
   `-s ${src} ` +
   `-d ${dist} ` +
