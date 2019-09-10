@@ -36,16 +36,16 @@
 ##### 📃exhibition
 
 1. 原始文件目录
-   ![image-20190910203508185](/Users/huangjunjie27/Desktop/projects/mine/Pretty/readme.assets/image-20190910203508185.png)
+   ![image-20190910203508185](./readme.assets/image-20190910203508185.png)
 
 2. 样式奇怪的原始文件
-   ![](/Users/huangjunjie27/Desktop/projects/mine/Pretty/readme.assets/屏幕快照 2019-09-10 下午8.35.38.png)
+   ![](./readme.assets/屏幕快照 2019-09-10 下午8.35.38.png)
 
 3. 输出文件目录
-   ![](/Users/huangjunjie27/Desktop/projects/mine/Pretty/readme.assets/屏幕快照 2019-09-10 下午8.37.50.png)
+   ![](./readme.assets/屏幕快照 2019-09-10 下午8.37.50.png)
 
 4. 样式漂亮的输出文件
-   ![image-20190910203945684](/Users/huangjunjie27/Desktop/projects/mine/Pretty/readme.assets/image-20190910203945684.png)
+   ![image-20190910203945684](./readme.assets/image-20190910203945684.png)
 
 5. 告诉你哪些eslint没有被解决掉.默认为根目录下的`.pretty.error-eslint.json`
 
