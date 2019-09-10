@@ -1,6 +1,6 @@
 {
   "name": "wander-pretty",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "wander"
   },
@@ -20,7 +20,12 @@
   "engines": {
     "node": "^8.10.0 || ^10.13.0 || >=11.10.1"
   },
-  "keywords": [],
+  "keywords": [
+    "pretty",
+    "wander",
+    "eslint",
+    "prettier"
+  ],
   "license": "MIT",
   "dependencies": {
     "commander": "^3.0.1",

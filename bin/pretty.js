@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const sh = require('shelljs');
 const commander = require('commander');
 const defaultConfig = require('../lib/defaultConfig');
